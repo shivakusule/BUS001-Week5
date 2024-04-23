@@ -1,0 +1,28 @@
+graph LR
+A[Network Infrastructure] --> B{SIM Card Manufacturers}
+A --> C{Logistics Providers}
+B --> D{Retail Partners}
+B --> E{MNO Online Store}
+C --> D
+C --> E
+D,E --> F{Customer Acquisition}
+F --> G{Activation & Provisioning}
+G --> H{MVNE (for MVNOs)} [dashed]
+G --> I{MNO Core Network}
+H --> I
+I --> J{Service Activation Systems}
+J --> K{Customer Service & Support}
+K --> L{Call Centers}
+K --> M{Technical Support Teams}
+K --> N{Online Support}
+I --> O{Billing & Revenue Management}
+O --> P{Billing Systems}
+O --> Q{Payment Processing Partners}
+A --> R{Network Maintenance & Optimization}
+R --> S{Network Operations Centers (NOCs)}
+R --> T{Field Technicians}
+I --> U{Value-Added Services (VAS)}
+U --> V{Content Providers}
+U --> W{Third-Party Applications}
+O --> X{Customer}
+X --> K [loop, dotted, Customer Feedback]
